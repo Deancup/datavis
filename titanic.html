@@ -71,7 +71,7 @@
 
         var myChart = new dimple.chart (svg,data);
         var y = myChart.addPctAxis('y',yAxis);
-        var x = myChart.addCategoryAxis('x','Pclass');
+        var x = myChart.addCategoryAxis('x',['Pclass','Sex']);
         var s = myChart.addSeries(Series,dimple.plot.bar);
         s.afterDraw = afterDrawCallback;
         myChart.addLegend(200,10,380,20,'right');
